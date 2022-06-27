@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        //.............................................................................Ex1
+        const numbersOne = [1, 2, 3];
+        const numbersTwo = [4, 5, 6];
+        const numbersCombined = numbersOne.concat(numbersTwo);
+        //const numbersCombined = [...numbersOne, ...numbersTwo];
+        document.write(numbersCombined);
+
+        //.............................................................................Ex2
+        //Assign the first and second items from numbers to variables and put the rest in an array
+
+        /*const numbers = [1, 2, 3, 4, 5, 6];
+
+        const [one, two, ...rest] = numbers;
+        document.write("<p>" + one + "</p>");
+        document.write("<p>" + two + "</p>");
+        document.write("<p>" + rest + "</p>");*/
+
+        //.............................................................................Ex3
+        //Combine these two objects:
+
+        /*const myVehicle = {
+            brand: 'Ford',
+            model: 'Mustang',
+            color: 'red'
+        }
+
+        const updateMyVehicle = {
+            type: 'car',
+            year: 2021, 
+            color: 'yellow'
+        }
+
+        const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+        console.log(myUpdatedVehicle);*/
+
+        //.............................................................................Ex4
+        //sum array of numbers
+        /*function sum(x,y,z){
+            return x+y+z;
+        }
+
+        const myNumbers = [1,2,3]
+
+        console.log(sum(...myNumbers));*/
+
+        //.............................................................................Ex5
+        /*let arrayOne = [1,2,3];
+        let arrayTwo = arrayOne;
+        //let arrayTwo = [...arrayOne];
+
+        arrayOne.push(10);
+        console.log(arrayOne);
+        console.log(arrayTwo);*/
+
+        //.............................................................................Ex6
+        /*let myArr = [1,2,3,100,-20,-10,500];
+        console.log(Math.min(myArr)); //NaN
+        console.log(Math.min(...myArr)); //-20*/
+
+    </script>
+</body>
+</html>

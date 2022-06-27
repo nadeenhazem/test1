@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <script>
+        function showInfo(userName, age, job){
+            return `My name is ${userName}, Iam ${age} years old and Iam a ${job}`;
+        }
+
+        console.log(showInfo());
+        console.log(showInfo("ahmed"));
+        console.log(showInfo("ahmed",20,"developer"));
+
+        /*function showInfo(userName, age, job){
+            userName = userName==undefined? 'Default User' : userName;
+            age = age==undefined? 'Default Age' : age;
+            job = job==undefined? 'Default Job' : job;
+            return `My name is ${userName}, Iam ${age} years old and Iam a ${job}`;
+        }*/
+        //or
+        /*function showInfo(userName, age, job){
+            userName = userName||"Default User";
+            age = age||"Default Age";
+            job = job||"Default Job";
+            return `My name is ${userName}, Iam ${age} years old and Iam a ${job}`;
+        }*/
+
+
+        //In ES6
+        /*function showInfo(userName="Default User", age="Default Age", job="Default Job"){
+            return `My name is ${userName}, Iam ${age} years old and Iam a ${job}`;
+        }*/
+    </script>
+</body>
+</html>

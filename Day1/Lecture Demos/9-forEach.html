@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+</head>
+
+<body>
+    <script>
+        
+        const numbers = [1, 2, 3, ,5];
+
+        console.log("for---------------------");
+        for(let i =0; i<numbers.length ; i++){
+            console.log(numbers[i]);  //Will print undefined for empty value
+        }
+
+        console.log("forEach---------------------");
+        numbers.forEach( (el, index) => console.log(el *10 , index) ) //Will skip empty value 
+
+        //forEach with Set
+        const mySet = new Set([1, 1, 1, 2, 2, 3, 3, 3, 4, 5]);
+
+        console.log("forEach Set---------------------");
+        mySet.forEach( (value, key) => { console.log(value, key) }); //key is the same as value
+
+        //forEach with Map
+        const myMap = new Map([
+            ["A",1] , ["B","b"], ["C",true], ["x",{}]
+        ]);
+
+        console.log("forEach Map---------------------");
+        myMap.forEach( (value, key) => { console.log(value, key) }); //key is not the same as value
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <h2>JavaScript String startsWith</h2>
+
+    <p>Check if a string starts with "Hello":</p>
+
+    <p id="demo"></p>
+
+    <script>
+        
+        let text = "Hello world, welcome to ITI";
+        
+        /*
+        //........................startsWith
+        document.getElementById("demo").innerHTML = text.startsWith("Hello") + "<br>"; // Returns true
+        document.getElementById("demo").innerHTML += text.startsWith("Hello",5) + "<br>"; // Returns false
+
+        //........................endsWith
+        document.getElementById("demo").innerHTML += text.endsWith("ITI") + "<br>";    // Returns true
+        document.getElementById("demo").innerHTML += text.endsWith("ITI", 23) + "<br>";    // Returns false
+        //........................includes
+        document.getElementById("demo").innerHTML += text.includes("world") + "<br>";    // Returns true
+        document.getElementById("demo").innerHTML += text.includes("world",11) + "<br>";    // Returns false
+        document.getElementById("demo").innerHTML +=text.length;
+        */
+
+        let x =`
+            ${text.startsWith("Hello")} 
+            ${text.startsWith("Hello",5)} 
+            ${text.endsWith("ITI")} 
+            ${text.endsWith("ITI", 23)}
+            ${text.includes("world")}
+            ${text.includes("world", 11)}
+            ${text.length}
+        `;
+       
+        document.getElementById("demo").innerText = x
+    </script>
+
+    </body>
+</html>

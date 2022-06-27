@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Literals</title>
+</head>
+<body>
+        
+    <script>
+        //First Demo
+        let oldX = "Hello Iam Student \n"+
+        "My Name is mohamed \n" + 
+        "Iam 20 years old";
+        
+        console.log(oldX);
+
+        let newX = `Hello Iam Student
+My Name is mohamed
+Iam 20 years old`;
+        console.log(newX);          
+
+        //Second Demo
+        let userName = "ahmed";
+        let age = 20;
+
+        const myHtml = `
+            <div class="card">
+                <h2 class="name">${userName}</h2>
+                <span class="age">${age}</span>
+            </div> `;
+        document.body.innerHTML = myHtml;
+    </script>
+</body>
+</html>

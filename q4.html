@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q4</title>
+</head>
+
+<body>
+    <input type="text" id="IdIndex">
+    <input type="button" name="" id="b1" value="click" onclick="re()">
+    <div id="div1"></div>
+    <script>
+        let studentArray = [
+            st1 = {
+                id: 1,
+                name: 'nadine',
+                job: 'fr',
+                email: 'n@gmail.com'
+            },
+            st2 = {
+                id: 2,
+                name: 'ayat',
+                job: 'bk',
+                email: 'a@gmail.com'
+            },
+            st3 = {
+                id: 3,
+                name: 'marina',
+                job: 'DB',
+                email: 'm@gmail.com'
+            }
+        ]
+        function re() {
+            var m = document.getElementById("IdIndex").value;
+            var x;
+
+            if (x = studentArray.find(st => st.id == m)) {
+                document.getElementById('div1').innerHTML += x.id;
+                document.getElementById('div1').innerHTML += x.name;
+                document.getElementById('div1').innerHTML += x.job;
+                document.getElementById('div1').innerHTML += x.email;
+            }
+            else{document.getElementById('div1').innerHTML = 'student not found';}
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2</title>
+</head>
+<body>
+    <script>
+        var arr=['asd.pdf','qwe.txt','htmlfile.html','cssfiles.txt','project.pdf','p2.pdf','p3.txt'];
+         function files(arg,...arr){
+            for (let f of arr){
+                if(f.includes(arg)){
+                    console.log(f)
+                }  
+            }    
+        }
+        files('.txt',...arr);
+    </script>
+    
+</body>
+</html>

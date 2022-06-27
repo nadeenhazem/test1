@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1</title>
+</head>
+<body>
+    <script>
+        let num=[1,2,3,4,5,6,7,8,9,10];
+       let k= num.filter(odd=>{return odd%2!=0})
+       document.write('odd numbers')
+        document.write(k);
+        document.write(" ");
+        
+
+        document.write('even numbers')
+        let ev=num.forEach((item)=>{
+            if (item%2==0){document.write( item +'\n')}})
+
+
+        let square=num.map(num=> num*num);
+        document.write('square numbers')
+        document.write(square+'\n')
+        
+    </script>
+</body>
+</html>

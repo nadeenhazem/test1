@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <h2>Javascript Object Destructing</h2>
+
+    <script>
+        
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+
+        //let firstName = person.firstName;
+        //let lastName = person.lastName; 
+
+        //let { firstName, lastName} = person;
+        
+        //let { firstName: fname, lastName: lname } = person;
+
+        /*let { firstName, lastName, middleName } = person;
+        console.log(middleName); // undefined*/
+
+        /*let { firstName, lastName, middleName = 'Default', currentAge: age = 18 } = person;
+        console.log(middleName); // Default*/
+
+        //document.write(firstName)
+
+        /*function getPerson() {
+            return null;
+        }
+
+        let { firstName, lastName } = getPerson() || {}; 
+        console.log(firstName); // undefined*/
+
+        let employee = {
+            id: 1001,
+            name: {
+                firstName: 'John',
+                lastName: 'Doe'
+            }
+        };
+        
+        /*let { id, name} = employee;
+        document.write(name); // [object Object]
+        document.write(name.firstName); // John*/
+
+        /*let { id, name:{firstName}} = employee;
+        document.write(firstName); // John
+        //document.write(lastName); // ReferenceError: lastName is not defined*/
+
+        /*
+        //Destructuring function arguments
+        //let display = (person) => console.log(`${person.firstName} ${person.lastName}`);
+
+        let display = ({firstName, lastName}) => console.log(`${firstName} ${lastName}`);
+
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+
+        display(person);*/
+    </script>
+
+    </body>
+</html>

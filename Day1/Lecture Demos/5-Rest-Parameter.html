@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        function add(x, y) {
+            return x + y;
+        }
+
+        console.log(add(1, 2, 3, 4, 5));  // returns 3 only the fist two arguments will be counted.
+
+        function addRest(...args) {
+            let result = 0;
+
+            for (let arg of args) 
+                result += arg;
+
+            return result
+        }
+
+        console.log(addRest(1)); // returns 1
+        console.log(addRest(1,2)); // returns 3
+        console.log(addRest(1, 2, 3, 4, 5)); // returns 15
+
+        function xyz(x, y, ...z) {
+            console.log(x, ' ', y);   // hey hello
+
+            console.log(z);           // ["wassup", "goodmorning", "hi", "howdy"]
+            console.log(z[0]);        // wassup
+            console.log(z.length);    // 4
+        }
+        
+        xyz("hey", "hello", "wassup", "goodmorning", "hi", "howdy")
+
+        const cars = ["BMW", "Volvo", "Mini"];
+        let text = "";
+        for (let x of cars) 
+            {  text += x + " ";}
+        document.write(text)
+
+        
+    </script>
+</body>
+</html>
